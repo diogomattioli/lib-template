@@ -17,4 +17,4 @@ add_library(${CMAKE_PROJECT_NAME} ${srcs})
 
 file(GLOB tests "tests/*.cpp")
 add_executable(${CMAKE_PROJECT_NAME}-tests ${tests})
-target_link_libraries(${CMAKE_PROJECT_NAME}-tests ${CMAKE_PROJECT_NAME} ${GTEST_BOTH_LIBRARIES})
+target_link_libraries(${CMAKE_PROJECT_NAME}-tests ${CMAKE_PROJECT_NAME} ${GTEST_BOTH_LIBRARIES} GTest::gmock_main)
