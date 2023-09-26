@@ -3,7 +3,7 @@ project(template CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wpedantic -Werror")
-set(CMAKE_CXX_FLAGS_DEBUG "-g3")
+set(CMAKE_CXX_FLAGS_DEBUG "-g3 -fsanitize=address,undefined")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 set(CMAKE_CXX_CPPCHECK "cppcheck")
 
